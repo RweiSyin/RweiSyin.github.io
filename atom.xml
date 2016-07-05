@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>呀！笔记</title>
-  
+  <subtitle>鸡肉味，嘎嘣脆</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://rweisyin.github.io/"/>
   <updated>2016-06-24T15:45:53.597Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://rweisyin.github.io/</id>
   
   <author>
-    <name>Huang RuiXin</name>
+    <name>HUANG</name>
     
   </author>
   
@@ -17,8 +17,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2016/06/24/hello-world/"/>
-    <id>http://yoursite.com/2016/06/24/hello-world/</id>
+    <link href="http://rweisyin.github.io/2016/06/24/hello-world/"/>
+    <id>http://rweisyin.github.io/2016/06/24/hello-world/</id>
     <published>2016-06-24T15:45:53.597Z</published>
     <updated>2016-06-24T15:45:53.597Z</updated>
     
