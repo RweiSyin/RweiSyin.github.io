@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rweisyin.github.io/"/>
-  <updated>2016-06-24T15:45:53.597Z</updated>
+  <updated>2016-07-12T11:05:17.231Z</updated>
   <id>http://rweisyin.github.io/</id>
   
   <author>
@@ -14,6 +14,132 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git Simple Instructions</title>
+    <link href="http://rweisyin.github.io/2016/07/12/git-simple-instructions/"/>
+    <id>http://rweisyin.github.io/2016/07/12/git-simple-instructions/</id>
+    <published>2016-07-12T10:41:15.496Z</published>
+    <updated>2016-07-12T11:05:17.231Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;这是一个简陋的 Git 说明，如有错误请指出或havenxin@163.com&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;该说明参考（抄）了：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://git-scm.com/doc&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git Book&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://stormzhang.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;stormzhang&lt;/a&gt; 的 &lt;a href=&quot;http://stormzhang.com/github/2016/06/19/learn-github-from-zero-summary/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;从0开始学习 GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;廖雪峰&lt;/a&gt; 的 &lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Git 是一款免费开源的分布式版本控制系统。区别于 Subversion 等版本控制系统将它们保存的信息看作是一组基本文件和每个文件随时间逐步累积的差异，而是对当时的全部文件制作一个快照并保存这个快照的索引。&lt;/p&gt;
+&lt;h2 id=&quot;文件处于-Git-中的状态&quot;&gt;&lt;a href=&quot;#文件处于-Git-中的状态&quot; class=&quot;headerlink&quot; title=&quot;文件处于 Git 中的状态&quot;&gt;&lt;/a&gt;&lt;span id=&quot;jump1&quot;&gt;文件处于 Git 中的状态&lt;/span&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;已提交（committed），数据已经安全的保存在本地数据库中&lt;/li&gt;
+&lt;li&gt;已修改（modified），修改了文件，但还没保存到数据库中&lt;/li&gt;
+&lt;li&gt;已暂存（staged），对一个已修改文件的当前版本做了标记，使之包含在下次提交的快照中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;基本的-Git-工作流程&quot;&gt;&lt;a href=&quot;#基本的-Git-工作流程&quot; class=&quot;headerlink&quot; title=&quot;基本的 Git 工作流程&quot;&gt;&lt;/a&gt;基本的 Git 工作流程&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;在工作目录中修改文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;暂存文件，将文件的快照放入暂存区域&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;提交更新，找到暂存区域的文件，将快照永久性存储到 Git 仓库目录&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://git-scm.com/download/linux&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;在 Linux 上安装&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://git-scm.com/download/mac&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;在 Mac 上安装&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://git-scm.com/download/win&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;在 Windows 上安装&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;Git-的初始配置&quot;&gt;&lt;a href=&quot;#Git-的初始配置&quot; class=&quot;headerlink&quot; title=&quot;Git 的初始配置&quot;&gt;&lt;/a&gt;Git 的初始配置&lt;/h2&gt;&lt;p&gt;Git 自带一个 git config 的工具来帮助设置控制 Git 外观和行为的配置变量。 这些变量存储在三个不同的位置：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;/etc/gitconfig 文件: 包含系统上每一个用户及他们仓库的通用配置。 如果使用带有 –system 选项的 git config 时，它会从此文件读写配置变量&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;~/.gitconfig 或 ~/.config/git/config 文件：只针对当前用户。 可以传递 –global 选项让 Git 读写此文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;当前使用仓库的 Git 目录中的 config 文件（就是 .git/config）：针对该仓库&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;且每一个级别覆盖上一级别的配置。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;查看你的配置信息： &lt;code&gt;$ git config --list&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;用户配置&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;配置用户名：&lt;code&gt;$ git config --global user.name &amp;quot;Your Name&amp;quot;&lt;/code&gt; &lt;/li&gt;
+&lt;li&gt;配置用户邮箱：&lt;code&gt;$ git config --global user.email yourname@example.com&lt;/code&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;文本编辑器配置&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;配置你的编辑器为 EMACS：&lt;code&gt;$ git config --global core.editor emacs&lt;/code&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;其他配置请参考以上&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;获取帮助&quot;&gt;&lt;a href=&quot;#获取帮助&quot; class=&quot;headerlink&quot; title=&quot;获取帮助&quot;&gt;&lt;/a&gt;获取帮助&lt;/h2&gt;&lt;p&gt;可以查看更加详细的 Git 使用方式。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;获取 Git 命令列表： &lt;code&gt;$ git&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;获取 Git 命令帮助： &lt;code&gt;$ git help &amp;lt;verb&amp;gt;&lt;/code&gt; ，如 &lt;code&gt;$ git help config&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;Git-本地仓库操作&quot;&gt;&lt;a href=&quot;#Git-本地仓库操作&quot; class=&quot;headerlink&quot; title=&quot;Git 本地仓库操作&quot;&gt;&lt;/a&gt;Git 本地仓库操作&lt;/h1&gt;&lt;h2 id=&quot;初始化-Git-仓库&quot;&gt;&lt;a href=&quot;#初始化-Git-仓库&quot; class=&quot;headerlink&quot; title=&quot;初始化 Git 仓库&quot;&gt;&lt;/a&gt;初始化 Git 仓库&lt;/h2&gt;&lt;p&gt;使当前目录初始化为一个 Git 仓库： &lt;code&gt;$ git init&lt;/code&gt; 。&lt;/p&gt;
+&lt;h2 id=&quot;状态文件查看&quot;&gt;&lt;a href=&quot;#状态文件查看&quot; class=&quot;headerlink&quot; title=&quot;状态文件查看&quot;&gt;&lt;/a&gt;状态文件查看&lt;/h2&gt;&lt;p&gt;查看目录下文件在 Git 中的&lt;a href=&quot;#jump1&quot;&gt;状态&lt;/a&gt;： &lt;code&gt;$ git status&lt;/code&gt; 。&lt;/p&gt;
+&lt;h2 id=&quot;添加文件到暂存区&quot;&gt;&lt;a href=&quot;#添加文件到暂存区&quot; class=&quot;headerlink&quot; title=&quot;添加文件到暂存区&quot;&gt;&lt;/a&gt;添加文件到暂存区&lt;/h2&gt;&lt;p&gt;Git 会提示 Untracked files 来展示未暂存的文件，添加文件到暂存区： &lt;code&gt;$ git add &amp;lt;file name&amp;gt;&lt;/code&gt; ，如添加 README.md 文件： &lt;code&gt;$ git add README.md&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;添加所有未暂存的文件到暂存区： &lt;code&gt;$ git add .&lt;/code&gt; 。&lt;/p&gt;
+&lt;h2 id=&quot;还原修改且未暂存的文件&quot;&gt;&lt;a href=&quot;#还原修改且未暂存的文件&quot; class=&quot;headerlink&quot; title=&quot;还原修改且未暂存的文件&quot;&gt;&lt;/a&gt;还原修改且未暂存的文件&lt;/h2&gt;&lt;p&gt;修改暂存区的文件后，文件状态会回到未暂存。可以使用： &lt;code&gt;$ git checkout &amp;lt;file name&amp;gt;&lt;/code&gt; ，文件会还原到之前在暂存区时的文件。&lt;/p&gt;
+&lt;p&gt;该命令十分危险，你所有的更改将会消失并且不可挽回。&lt;/p&gt;
+&lt;h2 id=&quot;查看修改且未暂存文件的详细差异信息&quot;&gt;&lt;a href=&quot;#查看修改且未暂存文件的详细差异信息&quot; class=&quot;headerlink&quot; title=&quot;查看修改且未暂存文件的详细差异信息&quot;&gt;&lt;/a&gt;查看修改且未暂存文件的详细差异信息&lt;/h2&gt;&lt;p&gt;虽然 &lt;code&gt;$ git status&lt;/code&gt; 可以展示文件的状态，但是不能显示具体的改动。&lt;/p&gt;
+&lt;p&gt;使用 &lt;code&gt;$ git diff&lt;/code&gt; 可以查看曾在暂存区修改后未暂存文件在修改前后的详细差异信息。&lt;/p&gt;
+&lt;h2 id=&quot;查看已暂存但未提交的详细差异信息&quot;&gt;&lt;a href=&quot;#查看已暂存但未提交的详细差异信息&quot; class=&quot;headerlink&quot; title=&quot;查看已暂存但未提交的详细差异信息&quot;&gt;&lt;/a&gt;查看已暂存但未提交的详细差异信息&lt;/h2&gt;&lt;p&gt;文件在一次提交后，经过修改再次存到暂存区，使用 &lt;code&gt;$ git diff --staged&lt;/code&gt; 可以查看上次提交与当前暂存文件的详细差异信息。&lt;/p&gt;
+&lt;h2 id=&quot;将已暂存的文件移除暂存区&quot;&gt;&lt;a href=&quot;#将已暂存的文件移除暂存区&quot; class=&quot;headerlink&quot; title=&quot;将已暂存的文件移除暂存区&quot;&gt;&lt;/a&gt;将已暂存的文件移除暂存区&lt;/h2&gt;&lt;p&gt;&lt;code&gt;$ git rm --cached &amp;lt;file name&amp;gt;&lt;/code&gt; ， 如： &lt;code&gt;$ git rm --cached README.md&lt;/code&gt; 。  &lt;/p&gt;
+&lt;h2 id=&quot;提交暂存区文件到本地仓库&quot;&gt;&lt;a href=&quot;#提交暂存区文件到本地仓库&quot; class=&quot;headerlink&quot; title=&quot;提交暂存区文件到本地仓库&quot;&gt;&lt;/a&gt;提交暂存区文件到本地仓库&lt;/h2&gt;&lt;p&gt;&lt;code&gt;$ git commit -m &amp;#39;message&amp;#39;&lt;/code&gt; 。 message为提交时必填的附加信息。&lt;/p&gt;
+&lt;h2 id=&quot;更改提交&quot;&gt;&lt;a href=&quot;#更改提交&quot; class=&quot;headerlink&quot; title=&quot;更改提交&quot;&gt;&lt;/a&gt;更改提交&lt;/h2&gt;&lt;p&gt;在提交后，发现提交了不需要提交的文件，或者遗漏了要提交的文件，可以在调整暂存区文件后： &lt;code&gt;$ git commit --amend&lt;/code&gt; ，该命令会使你的本次提交覆盖上次提交。&lt;/p&gt;
+&lt;h2 id=&quot;查看提交记录&quot;&gt;&lt;a href=&quot;#查看提交记录&quot; class=&quot;headerlink&quot; title=&quot;查看提交记录&quot;&gt;&lt;/a&gt;查看提交记录&lt;/h2&gt;&lt;p&gt;查看 commit 记录和附加信息： &lt;code&gt;$ git log&lt;/code&gt; 。&lt;/p&gt;
+&lt;h2 id=&quot;查看分支&quot;&gt;&lt;a href=&quot;#查看分支&quot; class=&quot;headerlink&quot; title=&quot;查看分支&quot;&gt;&lt;/a&gt;查看分支&lt;/h2&gt;&lt;p&gt;&lt;code&gt;$ git init&lt;/code&gt; 后， Git 会创建默认分支 master ，但是一般我们并不在其上进行开发，而是新建分支来开发，开发完成后将分支合并到 master 下。&lt;/p&gt;
+&lt;p&gt;用 &lt;code&gt;$ git branch&lt;/code&gt; 可以查看当前的分支状态。&lt;/p&gt;
+&lt;h2 id=&quot;新建分支&quot;&gt;&lt;a href=&quot;#新建分支&quot; class=&quot;headerlink&quot; title=&quot;新建分支&quot;&gt;&lt;/a&gt;新建分支&lt;/h2&gt;&lt;p&gt;&lt;code&gt;$ git branch &amp;lt;branch name&amp;gt;&lt;/code&gt; ，如创建一个名为 dev 的分支： &lt;code&gt;$ git branch dev&lt;/code&gt; 。&lt;/p&gt;
+&lt;h2 id=&quot;删除分支&quot;&gt;&lt;a href=&quot;#删除分支&quot; class=&quot;headerlink&quot; title=&quot;删除分支&quot;&gt;&lt;/a&gt;删除分支&lt;/h2&gt;&lt;p&gt;&lt;code&gt;git branch -d &amp;lt;branch name&amp;gt;&lt;/code&gt; ，如删除一个名为 dev 的分支： &lt;code&gt;git branch -d dev&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;如果要删除的分支还没有合并到 master 下，使用以上命令删除会失败，但是可以强制删除：&lt;br&gt;&lt;code&gt;git branch -D &amp;lt;branch name&amp;gt;&lt;/code&gt; 。&lt;/p&gt;
+&lt;h2 id=&quot;切换分支&quot;&gt;&lt;a href=&quot;#切换分支&quot; class=&quot;headerlink&quot; title=&quot;切换分支&quot;&gt;&lt;/a&gt;切换分支&lt;/h2&gt;&lt;p&gt;&lt;code&gt;$ git checkout &amp;lt;branch name&amp;gt;&lt;/code&gt; ，如从 master 切换到 dev ： &lt;code&gt;$ git checkout dev&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;也可以在新建分支的时候就切换到该分支，如： &lt;code&gt;$ git checkout -b dev&lt;/code&gt; 。&lt;/p&gt;
+&lt;h2 id=&quot;合并分支&quot;&gt;&lt;a href=&quot;#合并分支&quot; class=&quot;headerlink&quot; title=&quot;合并分支&quot;&gt;&lt;/a&gt;合并分支&lt;/h2&gt;&lt;p&gt;当在开发分支开发完毕后需要合并到主分支时，首先切换到主分支，然后： &lt;code&gt;$ git merge &amp;lt;dev branch name&amp;gt;&lt;/code&gt; 将开发分支合并到主分支。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ git rebase &amp;lt;dev branch name&amp;gt;&lt;/code&gt; 也可以合并分支，这种方式会以时间排序。&lt;/p&gt;
+&lt;h2 id=&quot;标签&quot;&gt;&lt;a href=&quot;#标签&quot; class=&quot;headerlink&quot; title=&quot;标签&quot;&gt;&lt;/a&gt;标签&lt;/h2&gt;&lt;p&gt;标签的意义在于可以精准定位不同时段的代码。&lt;/p&gt;
+&lt;p&gt;建立标签： &lt;code&gt;$ git tag &amp;lt;tag name&amp;gt;&lt;/code&gt; ，例如设置当前代码为 V1 版本： &lt;code&gt;$ git tag V1&lt;/code&gt;  ;经过一段时间的开发后可以设置代码为 V2 版本： &lt;code&gt;$ git tag V2&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;查看标签：&lt;code&gt;$ git tag&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;切换标签：可以通过 &lt;code&gt;$ git checkout &amp;lt;tag name&amp;gt;&lt;/code&gt; 来切换不同时段的代码，如在开发过程中想回到 V1 时段的代码：&lt;code&gt;$ git checkout V1&lt;/code&gt; 。&lt;/p&gt;
+&lt;h1 id=&quot;Git-远程仓库操作&quot;&gt;&lt;a href=&quot;#Git-远程仓库操作&quot; class=&quot;headerlink&quot; title=&quot;Git 远程仓库操作&quot;&gt;&lt;/a&gt;Git 远程仓库操作&lt;/h1&gt;&lt;h2 id=&quot;本地仓库与远程仓库的关联&quot;&gt;&lt;a href=&quot;#本地仓库与远程仓库的关联&quot; class=&quot;headerlink&quot; title=&quot;本地仓库与远程仓库的关联&quot;&gt;&lt;/a&gt;本地仓库与远程仓库的关联&lt;/h2&gt;&lt;h3 id=&quot;注册GitHub&quot;&gt;&lt;a href=&quot;#注册GitHub&quot; class=&quot;headerlink&quot; title=&quot;注册GitHub&quot;&gt;&lt;/a&gt;注册GitHub&lt;/h3&gt;&lt;p&gt;在&lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;注册你的账户，需要提供用户名、密码、邮箱。&lt;/p&gt;
+&lt;h3 id=&quot;生成SSH-KEY&quot;&gt;&lt;a href=&quot;#生成SSH-KEY&quot; class=&quot;headerlink&quot; title=&quot;生成SSH KEY&quot;&gt;&lt;/a&gt;生成SSH KEY&lt;/h3&gt;&lt;p&gt;&lt;code&gt;$ ssh&lt;/code&gt; 确认你是否安装了SSH，如果出现 &lt;code&gt;usage:ssh...&lt;/code&gt; 则证明你已安装，若未安装请砸电脑。&lt;/p&gt;
+&lt;p&gt;然后用 &lt;code&gt;$ ssh-keygen -t rsa&lt;/code&gt; (回车回车回车…)在 &lt;code&gt;~/.ssh&lt;/code&gt;（Linux/Mac）或 &lt;code&gt;C:\Users\&amp;lt;...&amp;gt;/.ssh&lt;/code&gt; (Windows 7)目录下生成私钥 &lt;code&gt;id_rsa&lt;/code&gt; 与公钥 &lt;code&gt;id_rsa.pub&lt;/code&gt;。打开 &lt;code&gt;id_rsa.pub&lt;/code&gt; 并复制公钥内容。&lt;/p&gt;
+&lt;h3 id=&quot;绑定SSH&quot;&gt;&lt;a href=&quot;#绑定SSH&quot; class=&quot;headerlink&quot; title=&quot;绑定SSH&quot;&gt;&lt;/a&gt;绑定SSH&lt;/h3&gt;&lt;p&gt;在GitHub中依次：右上角头像旁 ▼–&amp;gt;Settings–&amp;gt;Personal settings–&amp;gt;SSH and GPG keys–&amp;gt;New SSH key。&lt;/p&gt;
+&lt;p&gt;将你复制的公钥内容粘贴在出现的Key文本框中，Title文本框中请随意填写。&lt;/p&gt;
+&lt;h3 id=&quot;测试&quot;&gt;&lt;a href=&quot;#测试&quot; class=&quot;headerlink&quot; title=&quot;测试&quot;&gt;&lt;/a&gt;测试&lt;/h3&gt;&lt;p&gt;&lt;code&gt;$ ssh -T git@github.com&lt;/code&gt; ,若让你yes请输入yes，不要输入y。然后你会看见 &lt;code&gt;Hi Gril! You&amp;#39;ve successfully authenticated...&lt;/code&gt; 。&lt;/p&gt;
+&lt;h2 id=&quot;远程操作&quot;&gt;&lt;a href=&quot;#远程操作&quot; class=&quot;headerlink&quot; title=&quot;远程操作&quot;&gt;&lt;/a&gt;远程操作&lt;/h2&gt;&lt;h3 id=&quot;在本地克隆远程仓库&quot;&gt;&lt;a href=&quot;#在本地克隆远程仓库&quot; class=&quot;headerlink&quot; title=&quot;在本地克隆远程仓库&quot;&gt;&lt;/a&gt;在本地克隆远程仓库&lt;/h3&gt;&lt;p&gt;&lt;code&gt;$ git clone &amp;lt;SSH&amp;gt;&lt;/code&gt; 。把一个存在的远程仓库克隆到本地。SSH 可以在 GitHub 的仓库内 Clone or download 下找到。克隆的仓库已经是一个 Git 仓库，不需要初始化操作。&lt;/p&gt;
+&lt;h3 id=&quot;添加本地仓库为远程仓库&quot;&gt;&lt;a href=&quot;#添加本地仓库为远程仓库&quot; class=&quot;headerlink&quot; title=&quot;添加本地仓库为远程仓库&quot;&gt;&lt;/a&gt;添加本地仓库为远程仓库&lt;/h3&gt;&lt;p&gt;首先，需要在 GitHub 上建立一个新的仓库，这个新的仓库会提供一个 SSH。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ git remote add &amp;lt;repository name&amp;gt; &amp;lt;SSH&amp;gt;&lt;/code&gt; ，例如：&lt;code&gt;$ git remote add origin git@github.com:yourname/test.git&lt;/code&gt; 。&lt;/p&gt;
+&lt;h3 id=&quot;查看远程仓库&quot;&gt;&lt;a href=&quot;#查看远程仓库&quot; class=&quot;headerlink&quot; title=&quot;查看远程仓库&quot;&gt;&lt;/a&gt;查看远程仓库&lt;/h3&gt;&lt;p&gt;&lt;code&gt;$ git remote&lt;/code&gt; 。一个本地仓库可以对应多个远程仓库，该命令会返回该本地仓库关联的所有远程仓库。&lt;/p&gt;
+&lt;h3 id=&quot;提交到远程仓库&quot;&gt;&lt;a href=&quot;#提交到远程仓库&quot; class=&quot;headerlink&quot; title=&quot;提交到远程仓库&quot;&gt;&lt;/a&gt;提交到远程仓库&lt;/h3&gt;&lt;p&gt;&lt;code&gt;$  git push &amp;lt;repository name&amp;gt; &amp;lt;branch name&amp;gt;&lt;/code&gt; ，例如：&lt;code&gt;$  git push origin master&lt;/code&gt; 。 &lt;code&gt;origin&lt;/code&gt; 为默认的远程仓库名，&lt;code&gt;master&lt;/code&gt; 是默认分支 master 。如果提交到其他分支，可换成其他分支名；如果提交到其他远程仓库，可换成其他远程仓库名。&lt;/p&gt;
+&lt;h3 id=&quot;同步远程仓库&quot;&gt;&lt;a href=&quot;#同步远程仓库&quot; class=&quot;headerlink&quot; title=&quot;同步远程仓库&quot;&gt;&lt;/a&gt;同步远程仓库&lt;/h3&gt;&lt;p&gt;&lt;code&gt;$ git pull &amp;lt;repository name&amp;gt; &amp;lt;branch name&amp;gt;&lt;/code&gt; ，例如：&lt;code&gt;$  git pull origin master&lt;/code&gt; 。将远程仓库同步到本地，一般情况下都是先 pull 再 push ，避免冲突。&lt;/p&gt;
+&lt;p&gt;注意： &lt;code&gt;$ git pull&lt;/code&gt; 与 &lt;code&gt;$ git fetch&lt;/code&gt; 都会将远程仓库同步到本地。区别在于 &lt;code&gt;$ git pull&lt;/code&gt; 会将远程仓库与本地仓库做合并操作，而 &lt;code&gt;$ git fetch&lt;/code&gt; 只会将仓库同步到本地不做任何操作。相对来说， &lt;code&gt;$ git fetch&lt;/code&gt; 会更加安全些。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;这是一个简陋的 Git 说明，如有错误请指出或havenxin@163.com&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;该说明参考（抄）了：&lt;/
+    
+    </summary>
+    
+      <category term="Git" scheme="http://rweisyin.github.io/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="http://rweisyin.github.io/tags/Git/"/>
+    
+      <category term="GitHub" scheme="http://rweisyin.github.io/tags/GitHub/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
