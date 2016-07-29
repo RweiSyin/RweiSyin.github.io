@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="呀！笔记">
-    <title>Git Simple Instructions - 呀！笔记</title>
+    <title>简易的 Git 使用 - 呀！笔记</title>
     <meta name="author" content="HUANG">
     
         <meta name="keywords" content="hexo,javascript,">
@@ -17,46 +17,28 @@
     
         <link rel="alternate" type="application/atom+xml" title="RSS" href="/atom.xml">
     
-    <meta name="description" content="说明
-这是一个简陋的 Git 说明，如有错误请指出或havenxin@163.com
-该说明参考（抄）了：
-
-Git Book
-stormzhang 的 从0开始学习 GitHub
-廖雪峰 的 Git教程
-
-
-
-简介Git 是一款免费开源的分布式版本控制系统。区别于 Subversion 等版本控制系统将它们保存的信息看作是一组基本文件和每个文件随时间逐步累积的差异，而是对当时的全部文件制作一个快">
+    <meta name="description" content="简介Git 是一款免费开源的分布式版本控制系统。区别于 Subversion 等版本控制系统将它们保存的信息看作是一组基本文件和每个文件随时间逐步累积的差异，而是对当时的全部文件制作一个快照并保存这个快照的索引。
+文件处于 Git 中的状态
+已提交（committed），数据已经安全的保存在本地数据库中
+已修改（modified），修改了文件，但还没保存到数据库中
+已暂存（staged），对一个已">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="Git Simple Instructions">
-<meta property="og:url" content="http://rweisyin.github.io/2016/07/12/git-simple-instructions/index.html">
+<meta property="og:title" content="简易的 Git 使用">
+<meta property="og:url" content="http://rweisyin.github.io/2016/07/12/simple-git-instructions/index.html">
 <meta property="og:site_name" content="呀！笔记">
-<meta property="og:description" content="说明
-这是一个简陋的 Git 说明，如有错误请指出或havenxin@163.com
-该说明参考（抄）了：
-
-Git Book
-stormzhang 的 从0开始学习 GitHub
-廖雪峰 的 Git教程
-
-
-
-简介Git 是一款免费开源的分布式版本控制系统。区别于 Subversion 等版本控制系统将它们保存的信息看作是一组基本文件和每个文件随时间逐步累积的差异，而是对当时的全部文件制作一个快">
-<meta property="og:updated_time" content="2016-07-12T11:05:17.231Z">
+<meta property="og:description" content="简介Git 是一款免费开源的分布式版本控制系统。区别于 Subversion 等版本控制系统将它们保存的信息看作是一组基本文件和每个文件随时间逐步累积的差异，而是对当时的全部文件制作一个快照并保存这个快照的索引。
+文件处于 Git 中的状态
+已提交（committed），数据已经安全的保存在本地数据库中
+已修改（modified），修改了文件，但还没保存到数据库中
+已暂存（staged），对一个已">
+<meta property="og:updated_time" content="2016-07-29T22:52:05.843Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git Simple Instructions">
-<meta name="twitter:description" content="说明
-这是一个简陋的 Git 说明，如有错误请指出或havenxin@163.com
-该说明参考（抄）了：
-
-Git Book
-stormzhang 的 从0开始学习 GitHub
-廖雪峰 的 Git教程
-
-
-
-简介Git 是一款免费开源的分布式版本控制系统。区别于 Subversion 等版本控制系统将它们保存的信息看作是一组基本文件和每个文件随时间逐步累积的差异，而是对当时的全部文件制作一个快">
+<meta name="twitter:title" content="简易的 Git 使用">
+<meta name="twitter:description" content="简介Git 是一款免费开源的分布式版本控制系统。区别于 Subversion 等版本控制系统将它们保存的信息看作是一组基本文件和每个文件随时间逐步累积的差异，而是对当时的全部文件制作一个快照并保存这个快照的索引。
+文件处于 Git 中的状态
+已提交（committed），数据已经安全的保存在本地数据库中
+已修改（modified），修改了文件，但还没保存到数据库中
+已暂存（staged），对一个已">
     
     
         
@@ -257,7 +239,7 @@ stormzhang 的 从0开始学习 GitHub
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title" itemprop="headline">
-            Git Simple Instructions
+            简易的 Git 使用
         </h1>
     
     <div class="post-meta">
@@ -279,17 +261,7 @@ stormzhang 的 从0开始学习 GitHub
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <h1 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h1><ol>
-<li>这是一个简陋的 Git 说明，如有错误请指出或havenxin@163.com</li>
-<li><p>该说明参考（抄）了：</p>
-<ul>
-<li><a href="https://git-scm.com/doc" target="_blank" rel="external">Git Book</a></li>
-<li><a href="http://stormzhang.com/" target="_blank" rel="external">stormzhang</a> 的 <a href="http://stormzhang.com/github/2016/06/19/learn-github-from-zero-summary/" target="_blank" rel="external">从0开始学习 GitHub</a></li>
-<li><a href="http://www.liaoxuefeng.com/" target="_blank" rel="external">廖雪峰</a> 的 <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">Git教程</a></li>
-</ul>
-</li>
-</ol>
-<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>Git 是一款免费开源的分布式版本控制系统。区别于 Subversion 等版本控制系统将它们保存的信息看作是一组基本文件和每个文件随时间逐步累积的差异，而是对当时的全部文件制作一个快照并保存这个快照的索引。</p>
+            <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>Git 是一款免费开源的分布式版本控制系统。区别于 Subversion 等版本控制系统将它们保存的信息看作是一组基本文件和每个文件随时间逐步累积的差异，而是对当时的全部文件制作一个快照并保存这个快照的索引。</p>
 <h2 id="文件处于-Git-中的状态"><a href="#文件处于-Git-中的状态" class="headerlink" title="文件处于 Git 中的状态"></a><span id="jump1">文件处于 Git 中的状态</span></h2><ul>
 <li>已提交（committed），数据已经安全的保存在本地数据库中</li>
 <li>已修改（modified），修改了文件，但还没保存到数据库中</li>
@@ -379,6 +351,11 @@ stormzhang 的 从0开始学习 GitHub
 <h3 id="提交到远程仓库"><a href="#提交到远程仓库" class="headerlink" title="提交到远程仓库"></a>提交到远程仓库</h3><p><code>$  git push &lt;repository name&gt; &lt;branch name&gt;</code> ，例如：<code>$  git push origin master</code> 。 <code>origin</code> 为默认的远程仓库名，<code>master</code> 是默认分支 master 。如果提交到其他分支，可换成其他分支名；如果提交到其他远程仓库，可换成其他远程仓库名。</p>
 <h3 id="同步远程仓库"><a href="#同步远程仓库" class="headerlink" title="同步远程仓库"></a>同步远程仓库</h3><p><code>$ git pull &lt;repository name&gt; &lt;branch name&gt;</code> ，例如：<code>$  git pull origin master</code> 。将远程仓库同步到本地，一般情况下都是先 pull 再 push ，避免冲突。</p>
 <p>注意： <code>$ git pull</code> 与 <code>$ git fetch</code> 都会将远程仓库同步到本地。区别在于 <code>$ git pull</code> 会将远程仓库与本地仓库做合并操作，而 <code>$ git fetch</code> 只会将仓库同步到本地不做任何操作。相对来说， <code>$ git fetch</code> 会更加安全些。</p>
+<h1 id="参考-amp-引用"><a href="#参考-amp-引用" class="headerlink" title="参考 &amp; 引用"></a>参考 &amp; 引用</h1><ul>
+<li><a href="https://git-scm.com/doc" target="_blank" rel="external">Git Book</a></li>
+<li><a href="http://stormzhang.com/" target="_blank" rel="external">stormzhang</a> 的 <a href="http://stormzhang.com/github/2016/06/19/learn-github-from-zero-summary/" target="_blank" rel="external">从0开始学习 GitHub</a></li>
+<li><a href="http://www.liaoxuefeng.com/" target="_blank" rel="external">廖雪峰</a> 的 <a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">Git教程</a></li>
+</ul>
 
             
         </div>
@@ -397,7 +374,7 @@ stormzhang 的 从0开始学习 GitHub
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/30/simple-http-instructions-1/"  data-tooltip="简易的 HTTP 基础（一）">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -420,17 +397,17 @@ stormzhang 的 从0开始学习 GitHub
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://rweisyin.github.io/2016/07/12/git-simple-instructions/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://rweisyin.github.io/2016/07/12/simple-git-instructions/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://rweisyin.github.io/2016/07/12/git-simple-instructions/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://rweisyin.github.io/2016/07/12/simple-git-instructions/">
                 <i class="fa fa-facebook-official"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://rweisyin.github.io/2016/07/12/git-simple-instructions/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://rweisyin.github.io/2016/07/12/simple-git-instructions/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
@@ -454,8 +431,8 @@ stormzhang 的 从0开始学习 GitHub
 
         
             
-                <div id="ds-thread" class="ds-thread" data-thread-key="2016/07/12/git-simple-instructions/"
-     data-title="Git Simple Instructions" data-url="http://rweisyin.github.io/2016/07/12/git-simple-instructions/">
+                <div id="ds-thread" class="ds-thread" data-thread-key="2016/07/12/simple-git-instructions/"
+     data-title="简易的 Git 使用" data-url="http://rweisyin.github.io/2016/07/12/simple-git-instructions/">
 </div>
 
             
@@ -479,7 +456,7 @@ stormzhang 的 从0开始学习 GitHub
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--disabled">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/07/30/simple-http-instructions-1/"  data-tooltip="简易的 HTTP 基础（一）">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">上一篇</span>
@@ -502,17 +479,17 @@ stormzhang 的 从0开始学习 GitHub
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://rweisyin.github.io/2016/07/12/git-simple-instructions/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://rweisyin.github.io/2016/07/12/simple-git-instructions/">
                 <i class="fa fa-google-plus"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://rweisyin.github.io/2016/07/12/git-simple-instructions/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://rweisyin.github.io/2016/07/12/simple-git-instructions/">
                 <i class="fa fa-facebook-official"></i>
             </a>
         </li>
         <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://rweisyin.github.io/2016/07/12/git-simple-instructions/">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://rweisyin.github.io/2016/07/12/simple-git-instructions/">
                 <i class="fa fa-twitter"></i>
             </a>
         </li>
@@ -538,17 +515,17 @@ stormzhang 的 从0开始学习 GitHub
                 <div id="share-options-bar" class="share-options-bar" data-behavior="3">
     <ul class="share-options">
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://rweisyin.github.io/2016/07/12/git-simple-instructions/">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://rweisyin.github.io/2016/07/12/simple-git-instructions/">
                 <i class="fa fa-google-plus"></i><span class="">分享到 Google+</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://rweisyin.github.io/2016/07/12/git-simple-instructions/">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://rweisyin.github.io/2016/07/12/simple-git-instructions/">
                 <i class="fa fa-facebook-official"></i><span>分享到 Facebook</span>
             </a>
         </li>
         <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://rweisyin.github.io/2016/07/12/git-simple-instructions/">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://rweisyin.github.io/2016/07/12/simple-git-instructions/">
                 <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
             </a>
         </li>

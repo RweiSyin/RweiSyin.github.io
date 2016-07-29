@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rweisyin.github.io/"/>
-  <updated>2016-07-12T11:05:17.231Z</updated>
+  <updated>2016-07-29T22:54:21.063Z</updated>
   <id>http://rweisyin.github.io/</id>
   
   <author>
@@ -16,23 +16,140 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Git Simple Instructions</title>
-    <link href="http://rweisyin.github.io/2016/07/12/git-simple-instructions/"/>
-    <id>http://rweisyin.github.io/2016/07/12/git-simple-instructions/</id>
-    <published>2016-07-12T11:32:09.660Z</published>
-    <updated>2016-07-12T11:05:17.231Z</updated>
+    <title>简易的 HTTP 基础（一）</title>
+    <link href="http://rweisyin.github.io/2016/07/30/simple-http-instructions-1/"/>
+    <id>http://rweisyin.github.io/2016/07/30/simple-http-instructions-1/</id>
+    <published>2016-07-29T22:50:40.628Z</published>
+    <updated>2016-07-29T22:54:21.063Z</updated>
     
-    <content type="html">&lt;h1 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;这是一个简陋的 Git 说明，如有错误请指出或havenxin@163.com&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;该说明参考（抄）了：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://git-scm.com/doc&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git Book&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://stormzhang.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;stormzhang&lt;/a&gt; 的 &lt;a href=&quot;http://stormzhang.com/github/2016/06/19/learn-github-from-zero-summary/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;从0开始学习 GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;廖雪峰&lt;/a&gt; 的 &lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git教程&lt;/a&gt;&lt;/li&gt;
+    <content type="html">&lt;h1 id=&quot;HTTP&quot;&gt;&lt;a href=&quot;#HTTP&quot; class=&quot;headerlink&quot; title=&quot;HTTP&quot;&gt;&lt;/a&gt;HTTP&lt;/h1&gt;&lt;p&gt;&lt;em&gt;HyperText Transfer Protocol&lt;/em&gt; 超文本转移协议。&lt;/p&gt;
+&lt;p&gt;随 WEB 的发展，HTTP 基本没怎么变过。目前主流版本为 &lt;strong&gt;HTTP/1.1&lt;/strong&gt; ，标准为&lt;a href=&quot;http://www.ietf.org/rfc/rfc2616.txt&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;RFC&lt;/a&gt; &lt;em&gt;Request for Comments&lt;/em&gt; 。&lt;/p&gt;
+&lt;h1 id=&quot;TCP-IP-协议族&quot;&gt;&lt;a href=&quot;#TCP-IP-协议族&quot; class=&quot;headerlink&quot; title=&quot;TCP/IP 协议族&quot;&gt;&lt;/a&gt;TCP/IP 协议族&lt;/h1&gt;&lt;p&gt;是互联网相关各类协议族的总称，通常使用的网络均是在 TCP/IP 协议族上运作的。&lt;/p&gt;
+&lt;p&gt;HTTP 为其一个子集。&lt;/p&gt;
+&lt;h3 id=&quot;TCP-IP-协议族的分层&quot;&gt;&lt;a href=&quot;#TCP-IP-协议族的分层&quot; class=&quot;headerlink&quot; title=&quot;TCP/IP 协议族的分层&quot;&gt;&lt;/a&gt;TCP/IP 协议族的分层&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;应用层 &lt;/li&gt;
+&lt;li&gt;传输层 &lt;/li&gt;
+&lt;li&gt;网络层 &lt;/li&gt;
+&lt;li&gt;数据链路层&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
+&lt;p&gt;&lt;strong&gt;应用层&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;决定了向用户提供应用服务时通信的活动。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;FTP &lt;em&gt;FIle Transfer Protocol&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;DNS &lt;em&gt;Domain Name System&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;HTTP &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;传输层&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;对处于网络连接的设备提供数据传输。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TCP &lt;em&gt;Transmission Control Protocol&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;UDP &lt;em&gt;User Data Protocol&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;网络层&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;网络互连层，用来处理网络上流动的数据包（网络传输的最小单位）。规定了如何选择路径将数据包传给目标设备。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;链路层&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;网络接口层，用来处理连接网络的硬件部分。包括操作系统、硬件驱动、网卡等。&lt;/p&gt;
+&lt;h3 id=&quot;TCP-IP-协议族的通信传输流&quot;&gt;&lt;a href=&quot;#TCP-IP-协议族的通信传输流&quot; class=&quot;headerlink&quot; title=&quot;TCP/IP 协议族的通信传输流&quot;&gt;&lt;/a&gt;TCP/IP 协议族的通信传输流&lt;/h3&gt;&lt;p&gt;通过分层的顺序在设备间通信。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;客户端在应用层以 HTTP 协议发送一个 HTTP 请求&lt;/li&gt;
+&lt;li&gt;为传输方便，传输层以 TCP 协议将从应用层接收到的 HTTP 请求报文进行处理：将报文标记序号以及端口号&lt;/li&gt;
+&lt;li&gt;网络层以 IP 协议将应用层处理后的数据做进一步处理：添加作为通信目的地的 MAC 地址&lt;/li&gt;
+&lt;li&gt;服务器在链路层接收网络层数据，并按序向上传递到服务器的应用层，完成一次由客户端到服务器的 HTTP 请求&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Git 是一款免费开源的分布式版本控制系统。区别于 Subversion 等版本控制系统将它们保存的信息看作是一组基本文件和每个文件随时间逐步累积的差异，而是对当时的全部文件制作一个快照并保存这个快照的索引。&lt;/p&gt;
+&lt;p&gt;数据的封装：发送端在层与层间会增加属于该层的首部信息，接收端层与层间会消去属于该层的首部信息。于是最后得到的是最初的 HTTP 数据。&lt;/p&gt;
+&lt;h3 id=&quot;TCP-IP-协议族的-IP&quot;&gt;&lt;a href=&quot;#TCP-IP-协议族的-IP&quot; class=&quot;headerlink&quot; title=&quot;TCP/IP 协议族的 IP&quot;&gt;&lt;/a&gt;TCP/IP 协议族的 IP&lt;/h3&gt;&lt;p&gt;&lt;em&gt;Internet Protocol&lt;/em&gt; 网际协议，处于网络层，用于指定传输目的地的地址。主要包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IP 地址，指定节点地址（可变）&lt;/li&gt;
+&lt;li&gt;MAC &lt;em&gt;Media Access Control Address&lt;/em&gt; 地址，指定网卡地址（不变）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ARP &lt;em&gt;Address Resolution Protocol&lt;/em&gt; 地址解析协议，可以根据 IP 地址反查出 MAC 地址。所以 IP 间通信主要依赖 MAC 。&lt;/p&gt;
+&lt;p&gt;Routing 路由选择，当往某 IP 地址发送数据但 ARP 未解析出 MAC 时，会先将数据发往已知的 MAC 做路由中转。该过程可能会重复多次，直到将数据发送到某 MAC ，该 MAC 即 IP 地址所在的 MAC 。&lt;/p&gt;
+&lt;h3 id=&quot;TCP-IP-协议族的-TCP&quot;&gt;&lt;a href=&quot;#TCP-IP-协议族的-TCP&quot; class=&quot;headerlink&quot; title=&quot;TCP/IP 协议族的 TCP&quot;&gt;&lt;/a&gt;TCP/IP 协议族的 TCP&lt;/h3&gt;&lt;p&gt;处于传输层，主要为数据提供可靠的字节流服务，在发送端将报文段分割为数据包进行传输；并在接收端将数据包重组为报文段。&lt;/p&gt;
+&lt;p&gt;为确保数据安全，TCP 采用了 three-way handshaking 3次握手策略。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;发送端将带有 SYN &lt;em&gt;synchronize&lt;/em&gt; 标志的数据包发送给接收端&lt;/li&gt;
+&lt;li&gt;接收端将带有 SYN/ACK &lt;em&gt;acknowledgement&lt;/em&gt; 标志的数据包发送给发送端用来确认可以传输&lt;/li&gt;
+&lt;li&gt;发送端将带有 ACK 标志的数据包再发给接收端表示握手结束&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;TCP-IP-协议族的-DNS&quot;&gt;&lt;a href=&quot;#TCP-IP-协议族的-DNS&quot; class=&quot;headerlink&quot; title=&quot;TCP/IP 协议族的 DNS&quot;&gt;&lt;/a&gt;TCP/IP 协议族的 DNS&lt;/h3&gt;&lt;p&gt;与 HTTP 同处于应用层。提供域名与 IP 地址间的解析服务。&lt;/p&gt;
+&lt;p&gt;域名比起 IP 地址的数字更容易被记住，所以通常情况我们以域名来访问网络。然而计算机更容易处理数字表示的 IP 地址。所以需使用 DNS 将域名解析为 IP 地址；也可以将 IP 地址转为域名。&lt;/p&gt;
+&lt;h3 id=&quot;URI-amp-URL&quot;&gt;&lt;a href=&quot;#URI-amp-URL&quot; class=&quot;headerlink&quot; title=&quot;URI &amp;amp; URL&quot;&gt;&lt;/a&gt;URI &amp;amp; URL&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;URI &lt;em&gt;Uniform Resource Identifier&lt;/em&gt; 统一资源标识符，用于表示某一网络资源&lt;/li&gt;
+&lt;li&gt;URL &lt;em&gt;Uniform Resource Locator&lt;/em&gt; 统一资源定位符，用于表示某一网络地点，通常所说的网址&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;由于地址也可视为资源的一种，所以 URL 为 URI 的子集。&lt;/p&gt;
+&lt;p&gt;URI 的格式：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;http://user:pass@localhost:port/dir/res?param=value&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;http: 应用层协议&lt;/li&gt;
+&lt;li&gt;user:pass 认证信息，可省略&lt;/li&gt;
+&lt;li&gt;localhost 服务器地址&lt;/li&gt;
+&lt;li&gt;port 服务器端口号&lt;/li&gt;
+&lt;li&gt;dir 资源所在的路径&lt;/li&gt;
+&lt;li&gt;res 资源文件&lt;/li&gt;
+&lt;li&gt;param 参数，可省略&lt;/li&gt;
+&lt;li&gt;value 参数值，可省略&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;HTTP-协议&quot;&gt;&lt;a href=&quot;#HTTP-协议&quot; class=&quot;headerlink&quot; title=&quot;HTTP 协议&quot;&gt;&lt;/a&gt;HTTP 协议&lt;/h1&gt;&lt;p&gt;HTTP 协议是 stateless 无状态协议：不对请求和响应之间的状态进行保存，不对请求和响应做持久化处理。也就是说当次请求与响应，与之前的请求与响应无关。但有时我们需要状态保存，所以引入了 Cookie 。&lt;/p&gt;
+&lt;h3 id=&quot;Request-请求&quot;&gt;&lt;a href=&quot;#Request-请求&quot; class=&quot;headerlink&quot; title=&quot;Request 请求&quot;&gt;&lt;/a&gt;Request 请求&lt;/h3&gt;&lt;p&gt;HTTP 协议规定，请求从客户端出发。客户端会发送类似这样的 HTTP 请求报文：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;9&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;10&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;11&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;method URI HTTP/1.1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Host: &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Connection: &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Accept: &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;User-Agent: &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Accept-Encoding: &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Accept-Language: &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Cookie:&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;...&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;...&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;第一行描述了请求方法，访问的资源，HTTP 协议版本&lt;/li&gt;
+&lt;li&gt;第二行到第九行，描述了可选的请求首部信息，即 Request Header&lt;/li&gt;
+&lt;li&gt;第十行为空行，用于区分 Header 与 Body &lt;/li&gt;
+&lt;li&gt;第十一行开始描述请求的主体，即 Request Body &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;Request-Method-请求方法&quot;&gt;&lt;a href=&quot;#Request-Method-请求方法&quot; class=&quot;headerlink&quot; title=&quot;Request Method 请求方法&quot;&gt;&lt;/a&gt;Request Method 请求方法&lt;/h4&gt;&lt;h6 id=&quot;GET&quot;&gt;&lt;a href=&quot;#GET&quot; class=&quot;headerlink&quot; title=&quot;GET&quot;&gt;&lt;/a&gt;GET&lt;/h6&gt;&lt;p&gt;用于获取资源。&lt;/p&gt;
+&lt;h6 id=&quot;POST&quot;&gt;&lt;a href=&quot;#POST&quot; class=&quot;headerlink&quot; title=&quot;POST&quot;&gt;&lt;/a&gt;POST&lt;/h6&gt;&lt;p&gt;用于提交数据，同时也可以获取资源。&lt;/p&gt;
+&lt;p&gt;GET也可以用于提交数据，但是由于是将请求信息拼接到 URI 中，使请求信息可见，所以存在安全隐患，并不建议以 GET 提交数据。&lt;/p&gt;
+&lt;h6 id=&quot;PUT&quot;&gt;&lt;a href=&quot;#PUT&quot; class=&quot;headerlink&quot; title=&quot;PUT&quot;&gt;&lt;/a&gt;PUT&lt;/h6&gt;&lt;p&gt;用于传输文件。将文件内容置于请求主体中传输。但是 PUT 方法不能身份认证，所以人人可以传输文件存在安全隐患，所以不建议使用。&lt;/p&gt;
+&lt;h6 id=&quot;HEAD&quot;&gt;&lt;a href=&quot;#HEAD&quot; class=&quot;headerlink&quot; title=&quot;HEAD&quot;&gt;&lt;/a&gt;HEAD&lt;/h6&gt;&lt;p&gt;用于返回 Response Header 响应首部。与 GET 方法区分：GET 主要是获取资源，即 Response Body 主体部分。&lt;/p&gt;
+&lt;h6 id=&quot;DELETE&quot;&gt;&lt;a href=&quot;#DELETE&quot; class=&quot;headerlink&quot; title=&quot;DELETE&quot;&gt;&lt;/a&gt;DELETE&lt;/h6&gt;&lt;p&gt;用于删除文件。与 PUT 方法相反。&lt;/p&gt;
+&lt;h6 id=&quot;OPTIONS&quot;&gt;&lt;a href=&quot;#OPTIONS&quot; class=&quot;headerlink&quot; title=&quot;OPTIONS&quot;&gt;&lt;/a&gt;OPTIONS&lt;/h6&gt;&lt;p&gt;用于查询 URI 所支持的 Request Method 请求方法。&lt;/p&gt;
+&lt;h6 id=&quot;TRACE&quot;&gt;&lt;a href=&quot;#TRACE&quot; class=&quot;headerlink&quot; title=&quot;TRACE&quot;&gt;&lt;/a&gt;TRACE&lt;/h6&gt;&lt;p&gt;用于路径追踪。不常用。&lt;/p&gt;
+&lt;h6 id=&quot;CONNECT&quot;&gt;&lt;a href=&quot;#CONNECT&quot; class=&quot;headerlink&quot; title=&quot;CONNECT&quot;&gt;&lt;/a&gt;CONNECT&lt;/h6&gt;&lt;p&gt;用于在与代理服务器通信时建立隧道，主要使用 SSL &lt;em&gt;Secure Sockets Layer&lt;/em&gt; 安全套阶层与 TLS &lt;em&gt;Transport Layer Security&lt;/em&gt; 传输层安全协议把通信内容加密后传输。&lt;/p&gt;
+&lt;h6 id=&quot;LINK-amp-UNLINK&quot;&gt;&lt;a href=&quot;#LINK-amp-UNLINK&quot; class=&quot;headerlink&quot; title=&quot;LINK&amp;amp;UNLINK&quot;&gt;&lt;/a&gt;LINK&amp;amp;UNLINK&lt;/h6&gt;&lt;p&gt;HTTP/1.0 中的方法，HTTP/1.1 已弃用。&lt;/p&gt;
+&lt;h3 id=&quot;Response-响应&quot;&gt;&lt;a href=&quot;#Response-响应&quot; class=&quot;headerlink&quot; title=&quot;Response 响应&quot;&gt;&lt;/a&gt;Response 响应&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;4&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;5&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;6&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;7&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;8&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;HTTP/1.1 status-code status-phrase&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Server&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Date:&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;Content-Length:&lt;/div&gt;&lt;div class=&quot;line&quot;&gt; &lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;html&amp;gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;...&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;...&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;第一行描述了 HTTP 协议版本，状态码，状态短语&lt;/li&gt;
+&lt;li&gt;第二行到第四行，描述了响应首部信息，即 Response Header&lt;/li&gt;
+&lt;li&gt;第五行为空行，用于区分 Header 与 Body &lt;/li&gt;
+&lt;li&gt;第六行开始描述响应的主体，即 Response Body&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Cookie-状态管理&quot;&gt;&lt;a href=&quot;#Cookie-状态管理&quot; class=&quot;headerlink&quot; title=&quot;Cookie 状态管理&quot;&gt;&lt;/a&gt;Cookie 状态管理&lt;/h3&gt;&lt;p&gt;通过在请求与响应报文中写入 Cookie 信息来控制客户端的状态。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;客户端第一次请求服务器时，服务器生成一个 Cookie 并在响应时把该 Cookie 设置在 Response Header 中的 Set-Cookie 内&lt;/li&gt;
+&lt;li&gt;客户端收到服务器的响应，保存 Response Header 中 Set-Cookie 的 Cookie &lt;/li&gt;
+&lt;li&gt;客户端再次请求服务器时会自动在请求 Request Header 中的 Cookie 内添加 Cookie ，服务器得到这个 Cookie ，识别出这是之前传给某客户端的 Cookie ，于是找到了该客户端，获取其之前请求与响应的状态&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;参考-amp-引用&quot;&gt;&lt;a href=&quot;#参考-amp-引用&quot; class=&quot;headerlink&quot; title=&quot;参考 &amp;amp; 引用&quot;&gt;&lt;/a&gt;参考 &amp;amp; 引用&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;图解 HTTP&lt;/li&gt;
+&lt;li&gt;HTTP 权威指南&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;HTTP&quot;&gt;&lt;a href=&quot;#HTTP&quot; class=&quot;headerlink&quot; title=&quot;HTTP&quot;&gt;&lt;/a&gt;HTTP&lt;/h1&gt;&lt;p&gt;&lt;em&gt;HyperText Transfer Protocol&lt;/em&gt; 超文本转移协议。&lt;/p&gt;
+&lt;p&gt;随 WEB 的发展
+    
+    </summary>
+    
+      <category term="HTTP" scheme="http://rweisyin.github.io/categories/HTTP/"/>
+    
+    
+      <category term="HTTP" scheme="http://rweisyin.github.io/tags/HTTP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>简易的 Git 使用</title>
+    <link href="http://rweisyin.github.io/2016/07/12/simple-git-instructions/"/>
+    <id>http://rweisyin.github.io/2016/07/12/simple-git-instructions/</id>
+    <published>2016-07-12T11:32:09.660Z</published>
+    <updated>2016-07-29T22:52:05.843Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Git 是一款免费开源的分布式版本控制系统。区别于 Subversion 等版本控制系统将它们保存的信息看作是一组基本文件和每个文件随时间逐步累积的差异，而是对当时的全部文件制作一个快照并保存这个快照的索引。&lt;/p&gt;
 &lt;h2 id=&quot;文件处于-Git-中的状态&quot;&gt;&lt;a href=&quot;#文件处于-Git-中的状态&quot; class=&quot;headerlink&quot; title=&quot;文件处于 Git 中的状态&quot;&gt;&lt;/a&gt;&lt;span id=&quot;jump1&quot;&gt;文件处于 Git 中的状态&lt;/span&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;已提交（committed），数据已经安全的保存在本地数据库中&lt;/li&gt;
 &lt;li&gt;已修改（modified），修改了文件，但还没保存到数据库中&lt;/li&gt;
@@ -122,13 +239,16 @@
 &lt;h3 id=&quot;提交到远程仓库&quot;&gt;&lt;a href=&quot;#提交到远程仓库&quot; class=&quot;headerlink&quot; title=&quot;提交到远程仓库&quot;&gt;&lt;/a&gt;提交到远程仓库&lt;/h3&gt;&lt;p&gt;&lt;code&gt;$  git push &amp;lt;repository name&amp;gt; &amp;lt;branch name&amp;gt;&lt;/code&gt; ，例如：&lt;code&gt;$  git push origin master&lt;/code&gt; 。 &lt;code&gt;origin&lt;/code&gt; 为默认的远程仓库名，&lt;code&gt;master&lt;/code&gt; 是默认分支 master 。如果提交到其他分支，可换成其他分支名；如果提交到其他远程仓库，可换成其他远程仓库名。&lt;/p&gt;
 &lt;h3 id=&quot;同步远程仓库&quot;&gt;&lt;a href=&quot;#同步远程仓库&quot; class=&quot;headerlink&quot; title=&quot;同步远程仓库&quot;&gt;&lt;/a&gt;同步远程仓库&lt;/h3&gt;&lt;p&gt;&lt;code&gt;$ git pull &amp;lt;repository name&amp;gt; &amp;lt;branch name&amp;gt;&lt;/code&gt; ，例如：&lt;code&gt;$  git pull origin master&lt;/code&gt; 。将远程仓库同步到本地，一般情况下都是先 pull 再 push ，避免冲突。&lt;/p&gt;
 &lt;p&gt;注意： &lt;code&gt;$ git pull&lt;/code&gt; 与 &lt;code&gt;$ git fetch&lt;/code&gt; 都会将远程仓库同步到本地。区别在于 &lt;code&gt;$ git pull&lt;/code&gt; 会将远程仓库与本地仓库做合并操作，而 &lt;code&gt;$ git fetch&lt;/code&gt; 只会将仓库同步到本地不做任何操作。相对来说， &lt;code&gt;$ git fetch&lt;/code&gt; 会更加安全些。&lt;/p&gt;
+&lt;h1 id=&quot;参考-amp-引用&quot;&gt;&lt;a href=&quot;#参考-amp-引用&quot; class=&quot;headerlink&quot; title=&quot;参考 &amp;amp; 引用&quot;&gt;&lt;/a&gt;参考 &amp;amp; 引用&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://git-scm.com/doc&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git Book&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://stormzhang.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;stormzhang&lt;/a&gt; 的 &lt;a href=&quot;http://stormzhang.com/github/2016/06/19/learn-github-from-zero-summary/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;从0开始学习 GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;廖雪峰&lt;/a&gt; 的 &lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;说明&quot;&gt;&lt;a href=&quot;#说明&quot; class=&quot;headerlink&quot; title=&quot;说明&quot;&gt;&lt;/a&gt;说明&lt;/h1&gt;&lt;ol&gt;
-&lt;li&gt;这是一个简陋的 Git 说明，如有错误请指出或havenxin@163.com&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;该说明参考（抄）了：&lt;/
+      &lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Git 是一款免费开源的分布式版本控制系统。区别于 Subversion 等版本控制系统将它们保存的信息看作是一组基本文件和每个文件随时间逐
     
     </summary>
     
