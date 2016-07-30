@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://rweisyin.github.io/"/>
-  <updated>2016-07-29T22:54:21.063Z</updated>
+  <updated>2016-07-29T23:21:06.133Z</updated>
   <id>http://rweisyin.github.io/</id>
   
   <author>
@@ -20,10 +20,11 @@
     <link href="http://rweisyin.github.io/2016/07/30/simple-http-instructions-1/"/>
     <id>http://rweisyin.github.io/2016/07/30/simple-http-instructions-1/</id>
     <published>2016-07-29T22:50:40.628Z</published>
-    <updated>2016-07-29T22:54:21.063Z</updated>
+    <updated>2016-07-29T23:21:06.133Z</updated>
     
     <content type="html">&lt;h1 id=&quot;HTTP&quot;&gt;&lt;a href=&quot;#HTTP&quot; class=&quot;headerlink&quot; title=&quot;HTTP&quot;&gt;&lt;/a&gt;HTTP&lt;/h1&gt;&lt;p&gt;&lt;em&gt;HyperText Transfer Protocol&lt;/em&gt; 超文本转移协议。&lt;/p&gt;
 &lt;p&gt;随 WEB 的发展，HTTP 基本没怎么变过。目前主流版本为 &lt;strong&gt;HTTP/1.1&lt;/strong&gt; ，标准为&lt;a href=&quot;http://www.ietf.org/rfc/rfc2616.txt&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;RFC&lt;/a&gt; &lt;em&gt;Request for Comments&lt;/em&gt; 。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h1 id=&quot;TCP-IP-协议族&quot;&gt;&lt;a href=&quot;#TCP-IP-协议族&quot; class=&quot;headerlink&quot; title=&quot;TCP/IP 协议族&quot;&gt;&lt;/a&gt;TCP/IP 协议族&lt;/h1&gt;&lt;p&gt;是互联网相关各类协议族的总称，通常使用的网络均是在 TCP/IP 协议族上运作的。&lt;/p&gt;
 &lt;p&gt;HTTP 为其一个子集。&lt;/p&gt;
 &lt;h3 id=&quot;TCP-IP-协议族的分层&quot;&gt;&lt;a href=&quot;#TCP-IP-协议族的分层&quot; class=&quot;headerlink&quot; title=&quot;TCP/IP 协议族的分层&quot;&gt;&lt;/a&gt;TCP/IP 协议族的分层&lt;/h3&gt;&lt;ul&gt;
@@ -131,7 +132,7 @@
     <summary type="html">
     
       &lt;h1 id=&quot;HTTP&quot;&gt;&lt;a href=&quot;#HTTP&quot; class=&quot;headerlink&quot; title=&quot;HTTP&quot;&gt;&lt;/a&gt;HTTP&lt;/h1&gt;&lt;p&gt;&lt;em&gt;HyperText Transfer Protocol&lt;/em&gt; 超文本转移协议。&lt;/p&gt;
-&lt;p&gt;随 WEB 的发展
+&lt;p&gt;随 WEB 的发展，HTTP 基本没怎么变过。目前主流版本为 &lt;strong&gt;HTTP/1.1&lt;/strong&gt; ，标准为&lt;a href=&quot;http://www.ietf.org/rfc/rfc2616.txt&quot;&gt;RFC&lt;/a&gt; &lt;em&gt;Request for Comments&lt;/em&gt; 。&lt;/p&gt;
     
     </summary>
     
@@ -147,9 +148,10 @@
     <link href="http://rweisyin.github.io/2016/07/12/simple-git-instructions/"/>
     <id>http://rweisyin.github.io/2016/07/12/simple-git-instructions/</id>
     <published>2016-07-12T11:32:09.660Z</published>
-    <updated>2016-07-29T22:52:05.843Z</updated>
+    <updated>2016-07-29T23:20:54.478Z</updated>
     
     <content type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Git 是一款免费开源的分布式版本控制系统。区别于 Subversion 等版本控制系统将它们保存的信息看作是一组基本文件和每个文件随时间逐步累积的差异，而是对当时的全部文件制作一个快照并保存这个快照的索引。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;文件处于-Git-中的状态&quot;&gt;&lt;a href=&quot;#文件处于-Git-中的状态&quot; class=&quot;headerlink&quot; title=&quot;文件处于 Git 中的状态&quot;&gt;&lt;/a&gt;&lt;span id=&quot;jump1&quot;&gt;文件处于 Git 中的状态&lt;/span&gt;&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;已提交（committed），数据已经安全的保存在本地数据库中&lt;/li&gt;
 &lt;li&gt;已修改（modified），修改了文件，但还没保存到数据库中&lt;/li&gt;
@@ -248,7 +250,7 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Git 是一款免费开源的分布式版本控制系统。区别于 Subversion 等版本控制系统将它们保存的信息看作是一组基本文件和每个文件随时间逐
+      &lt;h1 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h1&gt;&lt;p&gt;Git 是一款免费开源的分布式版本控制系统。区别于 Subversion 等版本控制系统将它们保存的信息看作是一组基本文件和每个文件随时间逐步累积的差异，而是对当时的全部文件制作一个快照并保存这个快照的索引。&lt;/p&gt;
     
     </summary>
     
