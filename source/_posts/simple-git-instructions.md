@@ -1,23 +1,15 @@
 ---
-title: Git Simple Instructions
+title: 简易的 Git 使用
 tags: [Git,GitHub]
 categories: "Git"
 comments: true
 ---
 
-# 说明
-
-1. 这是一个简陋的 Git 说明，如有错误请指出或havenxin@163.com
-2. 该说明参考（抄）了：
-
- - [Git Book](https://git-scm.com/doc)
- - [stormzhang](http://stormzhang.com/) 的 [从0开始学习 GitHub](http://stormzhang.com/github/2016/06/19/learn-github-from-zero-summary/)
- - [廖雪峰](http://www.liaoxuefeng.com/) 的 [Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
-
-
 # 简介
 
 Git 是一款免费开源的分布式版本控制系统。区别于 Subversion 等版本控制系统将它们保存的信息看作是一组基本文件和每个文件随时间逐步累积的差异，而是对当时的全部文件制作一个快照并保存这个快照的索引。
+
+<!-- more -->
 
 ## <span id="jump1">文件处于 Git 中的状态</span>
 
@@ -206,6 +198,12 @@ Git 会提示 Untracked files 来展示未暂存的文件，添加文件到暂�
 
 注意： `$ git pull` 与 `$ git fetch` 都会将远程仓库同步到本地。区别在于 `$ git pull` 会将远程仓库与本地仓库做合并操作，而 `$ git fetch` 只会将仓库同步到本地不做任何操作。相对来说， `$ git fetch` 会更加安全些。
 
+
+# 参考 & 引用
+
+ - [Git Book](https://git-scm.com/doc)
+ - [stormzhang](http://stormzhang.com/) 的 [从0开始学习 GitHub](http://stormzhang.com/github/2016/06/19/learn-github-from-zero-summary/)
+ - [廖雪峰](http://www.liaoxuefeng.com/) 的 [Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
 
 
 
